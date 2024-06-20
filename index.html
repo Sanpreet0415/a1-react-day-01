@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>React Element Rendering</title>
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- React and Babel scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.development.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+
+  <!-- React code -->
+  <script type="text/babel">
+    // Create a React component
+    class Greeting extends React.Component {
+      render() {
+        return <p>Seize the day</p>;
+      }
+    }
+
+    // Render the component into the root div
+    ReactDOM.render(<Greeting />, document.getElementById('root'));
+  </script>
+</body>
+</html>
